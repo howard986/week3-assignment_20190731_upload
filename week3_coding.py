@@ -1,4 +1,4 @@
-# In[1]: Linear Regression
+# In[1]: 测试LinearRegression和LogisticRegression
 import numpy as np
 import matplotlib.pyplot as plt
 import random
@@ -16,7 +16,7 @@ def gen_data():
     y = (X * w + b + np.random.rand() * np.random.randint(-1, 2)).reshape(1, -1)
     return X, y, w, b
 
-# In[6]:
+# In[6]: 线性回归测试
 def LinearRegressionTest():
     X, y, w_org, b_org = gen_data()
 
@@ -53,6 +53,7 @@ def LinearRegressionTest():
     plt.plot(x_ax, y_ax)
     plt.show()
 
+# 逻辑回归测试
 def LogisticRegressionTest():
     # 导入乳腺癌数据集
     cancer_data = load_breast_cancer()
